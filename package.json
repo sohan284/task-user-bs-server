@@ -1,7 +1,13 @@
 {
+  "name": "task-user-bs-server",
+  "version": "1.0.0",
+  "description": "A description of your project",
+  "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "start-dev": "nodemon index.js",
+    "prestart": "npm install",
+    "postinstall": "echo 'Dependencies installed!'",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
@@ -11,5 +17,10 @@
     "jsonwebtoken": "^9.0.2",
     "mongodb": "^6.8.0",
     "nodemon": "^3.1.4"
-  }
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "author": "Your Name",
+  "license": "MIT"
 }
